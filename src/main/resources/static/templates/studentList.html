@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家预约系统--后台管理</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet"/>
+
+    <!-- DataTables CSS -->
+    <link href="../css/dataTables.bootstrap.css" rel="stylesheet"/>
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../css/dataTables.responsive.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin-2.css" rel="stylesheet"/>
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"/> -->
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <!--<script src="../../../../../../../startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.js"></script>-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            <a href="/expertList" style="font-size: 1.5rem">expertList</a>
+        </li>
+        <li>
+            <a href="/teacherList" style="font-size: 1.5rem">teacherList</a>
+        </li>
+        <li>
+            <a href="/serviceList" style="font-size: 1.5rem">serviceList</a>
+        </li>
+        <li>
+        <a href="/orderList" style="font-size: 1.5rem">orderList</a>
+        </li>
+        <li>
+        <a href="/studentList" style="font-size: 1.5rem">studentList</a>
+        </li>
+        <!--<li>-->
+            <!--<a href="#" style="font-size: 1.5rem">orderList</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#" style="font-size: 1.5rem">studentList</a>-->
+        <!--</li>-->
+        <li>
+            <a href="/institudeList" style="font-size: 1.5rem">institudeRankList</a>
+        </li>
+        <li>
+            <a href="/majorList" style="font-size: 1.5rem">majorRankList</a>
+        </li>
+    </ul>
+</nav>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">List of student</h2>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <!--DataTables Advanced Tables-->
+                    <p>
+                        <button id="check" type="button" class="btn btn-default disabled" data-toggle="modal" data-target="#checkModal"><i class="fa fa-check-square-o">&nbsp;&nbsp;check</i></button>
+                        <!--<button id="delete" type="button" class="btn btn-default disabled"><i class="fa fa-minus-square-o">&nbsp;&nbsp;delete</i></button>-->
+                        <!--<button type="button" class="btn btn-default disabled"><i class="fa fa-check-square-o">&nbsp;&nbsp;modify</i></button>-->
+                    </p>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="test" pagination="p-new" pagenumber="1" totalnumber="" paginationmax="1"></div>
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="modal fade" id="checkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Whether the audit passed ?</h4>
+                    <form role="form" style="display: none">
+                        <div class="form-group">
+                            <input class="form-control" id="wechatId">
+                        </div>
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="name">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="phone">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="company">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                        <!--<input class="form-control" id="email">-->
+                        <!--</div>-->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-spaceId="" data-attachmentId=""
+                            data-attachmentName="" id="checkSubmit" style="display:inline-block" data-dismiss="modal">确定
+                    </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#page-wrapper -->
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../js/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/sb-admin-2.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/dataTables.bootstrap.min.js"></script>
+    <script src="../js/dataTables.responsive.js"></script>
+
+    <script src="../js/studentList.js"></script>
+</body>
+</html>

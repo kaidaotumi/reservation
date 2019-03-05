@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家预约系统--后台管理</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin-2.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            <a href="/expertList" style="font-size: 1.5rem">expertList</a>
+        </li>
+        <li>
+            <a href="/teacherList" style="font-size: 1.5rem">teacherList</a>
+        </li>
+        <li>
+            <a href="/serviceList" style="font-size: 1.5rem">serviceList</a>
+        </li>
+        <li>
+        <a href="/orderList" style="font-size: 1.5rem">orderList</a>
+        </li>
+        <li>
+        <a href="/studentList" style="font-size: 1.5rem">studentList</a>
+        </li>
+        <!--<li>-->
+            <!--<a href="#" style="font-size: 1.5rem">orderList</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#" style="font-size: 1.5rem">studentList</a>-->
+        <!--</li>-->
+        <li>
+            <a href="/institudeList" style="font-size: 1.5rem">institudeRankList</a>
+        </li>
+        <li>
+            <a href="/majorList" style="font-size: 1.5rem">majorRankList</a>
+        </li>
+    </ul>
+</nav>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <h1 class="page-header">Service Detail</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Order info
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <!--<fieldset disabled>-->
+                            <div class="form-group">
+                                <label>UserId</label>
+                                <input class="form-control" id="userId">
+                            </div>
+                            <div class="form-group">
+                                <label>ServiceId</label>
+                                <input class="form-control" id="serviceId">
+                            </div>
+                        <fieldset disabled>
+                            <div class="form-group">
+                                <label>CreateTime</label>
+                                <input class="form-control" id="createTime">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Service info
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <fieldset disabled>
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label>Content</label>
+                            <textarea class="form-control" rows="5" style="resize: vertical;" id="content"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>ReserveAddress</label>
+                            <input class="form-control" id="reserveAddress">
+                        </div>
+                        <div class="form-group">
+                            <label>ReserveTime</label>
+                            <input class="form-control" id="reserveTime">
+                        </div>
+                        <div class="form-group">
+                            <label>Deadline</label>
+                            <input class="form-control" id="deadline">
+                        </div>
+                        <div class="form-group">
+                            <label>MajorType</label>
+                            <select class="form-control" id="majorType">
+                                <option>Economics</option>
+                                <option>Business Administration</option>
+                                <option>finance</option>
+                                <option>Management</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>ServiceType</label>
+                            <select class="form-control" id="serviceType">
+                                <option>一般预约咨询</option>
+                                <option>学术科研项目</option>
+                                <option>企业咨询与合作</option>
+                            </select>
+                        </div>
+                            <!--<div class="form-group">-->
+                                <!--<label>Price</label>-->
+                                <!--<input type="number" min="0" class="form-control" id="price">-->
+                            <!--</div>-->
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Student info
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <fieldset disabled>
+                            <div class="form-group">
+                                <label>StudentName</label>
+                                <input class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input class="form-control" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Company</label>
+                                <input class="form-control" id="company">
+                            </div>
+                        </fieldset>
+                        <div style="text-align: center;">
+                            <button type="button" class="btn btn-default" id="modifyOrder">Submit Button</button>
+                            <button type="button" class="btn btn-default" id="cancelModify">Reset Button</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../js/metisMenu.min.js"></script>
+
+<script src="../js/moment.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../js/sb-admin-2.js"></script>
+
+<script src="../js/orderDetail.js"></script>
+</body>
+</html>
