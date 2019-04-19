@@ -2,7 +2,7 @@ var selected = []
 var content = []
 window.onload=function() {
     $.ajax({
-        url:'https://www.ufeng.top/professor/reserve/all',
+        url:'https://www.findpro.cn/professor/reserve/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -116,7 +116,7 @@ $("#addSubmit").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/reserve",
+        url:"https://www.findpro.cn/professor/reserve",
         data:data,
         async:false,
         success:function(data){
@@ -134,7 +134,7 @@ $("#addSubmit").click(function () {
         },
     });
     $.ajax({
-        url:'https://www.ufeng.top/professor/reserve/all',
+        url:'https://www.findpro.cn/professor/reserve/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -203,7 +203,7 @@ $("#delete").click(function () {
         var tmp=selected[i]
         $.ajax({
             type: "delete",
-            url:"https://www.ufeng.top/professor/reserve",
+            url:"https://www.findpro.cn/professor/reserve",
             data:{"orderId":tmp},
             async: false,
             success:function(data){

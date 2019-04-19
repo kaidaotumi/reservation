@@ -2,7 +2,7 @@ var selected = []
 var content = []
 window.onload=function() {
     $.ajax({
-        url:'https://www.ufeng.top/professor/rank/institude/all',
+        url:'https://www.findpro.cn/professor/rank/institude/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -89,7 +89,7 @@ window.onload=function() {
             // console.log(data)
             $.ajax({
                 type: "POST",
-                url: "https://www.ufeng.top/professor/rank/institude/update",
+                url: "https://www.findpro.cn/professor/rank/institude/update",
                 data: JSON.stringify(data),
                 contentType : 'application/json',
                 success: function (data) {
@@ -158,7 +158,7 @@ $("#insertSubmit").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/rank/institude",
+        url:"https://www.findpro.cn/professor/rank/institude",
         contentType : 'application/json',
         data:JSON.stringify(data),
         async:false,
@@ -177,7 +177,7 @@ $("#insertSubmit").click(function () {
         },
     });
     $.ajax({
-        url:'https://www.ufeng.top/professor/rank/institude/all',
+        url:'https://www.findpro.cn/professor/rank/institude/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -202,7 +202,7 @@ $("#delete").click(function () {
         var name = $("#"+tmp).parent().next().text()
         $.ajax({
             type: "post",
-            url:"https://www.ufeng.top/professor/rank/institude/delete/"+name,
+            url:"https://www.findpro.cn/professor/rank/institude/delete/"+name,
 
             async: false,
             success:function(data){

@@ -67,7 +67,7 @@ function initService(userId, serviceId) {
     order.serviceId = serviceId
     // order.createTime = createTime
     $.ajax({
-        url:'https://www.ufeng.top/professor/reserve',
+        url:'https://www.findpro.cn/professor/reserve',
         type:'get',
         data:{"userId":userId},
         success:function (res) {
@@ -112,7 +112,7 @@ $("#modifyOrder").click(function () {
     }
     $.ajax({
         type: "put",
-        url:"https://www.ufeng.top/professor/reserve",
+        url:"https://www.findpro.cn/professor/reserve",
         contentType : 'application/json',
         data:JSON.stringify(data),
         success:function(data){

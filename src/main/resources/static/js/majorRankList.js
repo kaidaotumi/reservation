@@ -2,7 +2,7 @@ var selected = []
 var content = []
 window.onload=function() {
     $.ajax({
-        url:'https://www.ufeng.top/professor/rank/major/all',
+        url:'https://www.findpro.cn/professor/rank/major/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -90,7 +90,7 @@ window.onload=function() {
             // console.log(data)
             $.ajax({
                 type: "POST",
-                url: "https://www.ufeng.top/professor/rank/major/update",
+                url: "https://www.findpro.cn/professor/rank/major/update",
                 data: JSON.stringify(data),
                 contentType : 'application/json',
                 success: function (data) {
@@ -163,7 +163,7 @@ $("#insertSubmit").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/rank/major",
+        url:"https://www.findpro.cn/professor/rank/major",
         contentType : 'application/json',
         data:JSON.stringify(data),
         async:false,
@@ -183,7 +183,7 @@ $("#insertSubmit").click(function () {
         },
     });
     $.ajax({
-        url:'https://www.ufeng.top/professor/rank/major/all',
+        url:'https://www.findpro.cn/professor/rank/major/all',
         type:'get',
         success:function (data) {
             if (data.success) {
@@ -214,7 +214,7 @@ $("#delete").click(function () {
         }
         $.ajax({
             type: "post",
-            url:"https://www.ufeng.top/professor/rank/major/delete/"+name,
+            url:"https://www.findpro.cn/professor/rank/major/delete/"+name,
             contentType : 'application/json',
             data:JSON.stringify(data),
             async: false,
