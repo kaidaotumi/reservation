@@ -8,7 +8,7 @@ window.onload=function(){
         success:function (data) {
             id=data
             $.ajax({
-                url:'https://www.ufeng.top/professor/user/id/'+data,
+                url:'https://www.findpro.cn/professor/user/id/'+data,
                 type:'get',
                 success:function (res) {
                     var user=res.content
@@ -68,7 +68,7 @@ $("#submit").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/user/update",
+        url:"https://www.findpro.cn/professor/user/update",
         dataType:"json",
         contentType : 'application/json',
         data:JSON.stringify(data),

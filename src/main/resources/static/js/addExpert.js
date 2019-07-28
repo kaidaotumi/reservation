@@ -44,7 +44,7 @@ $("#addExpert").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/user",
+        url:"https://www.findpro.cn/professor/user",
         dataType:"json",
         contentType : 'application/json',
         data:JSON.stringify(data),

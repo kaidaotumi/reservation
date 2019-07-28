@@ -13,7 +13,7 @@ window.onload=function() {
 
     function initPagenumber() {
         $.ajax({
-            url:'https://www.ufeng.top/professor/teacher/count',
+            url:'https://www.findpro.cn/professor/teacher/count',
             type:'get',
             success:function (data) {
                 if (data.success) {
@@ -153,7 +153,7 @@ window.onload=function() {
 //            用户在这里写页码切换时候的逻辑
         var page = pagenumber-1
         $.ajax({
-            url:'https://www.ufeng.top/professor/teachers',
+            url:'https://www.findpro.cn/professor/teachers',
             type:'get',
             data:{"page":page,"pageSize":50},
             success:function (data) {
@@ -327,7 +327,7 @@ $("#bindSubmit").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/teacher/update",
+        url:"https://www.findpro.cn/professor/teacher/update",
         dataType:"json",
         contentType : 'application/json',
         data:JSON.stringify(data),
@@ -359,7 +359,7 @@ $("#delete").click(function () {
         var tmp=selected[i]
         $.ajax({
             type: "post",
-            url:"https://www.ufeng.top/professor/teacher/delete/"+tmp,
+            url:"https://www.findpro.cn/professor/teacher/delete/"+tmp,
             data:{},
             async: false,
             success:function(data){

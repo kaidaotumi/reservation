@@ -16,7 +16,7 @@ window.onload=function(){
 
 function initDetail() {
     $.ajax({
-        url:'https://www.ufeng.top/professor/service/detail',
+        url:'https://www.findpro.cn/professor/service/detail',
         type:'get',
         data:{"serviceId":id},
         success:function (res) {
@@ -126,7 +126,7 @@ $("#modifyService").click(function () {
     }
     $.ajax({
         type: "put",
-        url:"https://www.ufeng.top/professor/service",
+        url:"https://www.findpro.cn/professor/service",
         dataType:"json",
         contentType : 'application/json',
         data:JSON.stringify(data),

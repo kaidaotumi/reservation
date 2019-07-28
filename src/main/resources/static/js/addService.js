@@ -50,7 +50,7 @@ $("#addService").click(function () {
     }
     $.ajax({
         type: "post",
-        url:"https://www.ufeng.top/professor/service",
+        url:"https://www.findpro.cn/professor/service",
         dataType:"json",
         contentType : 'application/json',
         data:JSON.stringify(data),

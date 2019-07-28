@@ -8,7 +8,7 @@ window.onload=function(){
         success:function (data) {
             wechatId=data
             $.ajax({
-                url:'https://www.ufeng.top/professor/teacher/'+wechatId,
+                url:'https://www.findpro.cn/professor/teacher/'+wechatId,
                 type:'get',
                 data:{},
                 success:function (res) {

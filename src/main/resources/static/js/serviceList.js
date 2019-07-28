@@ -15,7 +15,7 @@ window.onload=function() {
 
     function initPagenumber() {
         $.ajax({
-            url:'https://www.ufeng.top/professor/service/count',
+            url:'https://www.findpro.cn/professor/service/count',
             type:'get',
             async: false,
             success:function (data) {
@@ -156,7 +156,7 @@ window.onload=function() {
 //            用户在这里写页码切换时候的逻辑
         var startPos = (pagenumber-1)*50
         $.ajax({
-            url:'https://www.ufeng.top/professor/service/list',
+            url:'https://www.findpro.cn/professor/service/list',
             type:'get',
             data:{"startPos":startPos,"number":50},
             async: false,
@@ -288,7 +288,7 @@ window.onload=function() {
 
     function getAllServiceType() {
         $.ajax({
-            url:'https://www.ufeng.top/professor/service/service_type',
+            url:'https://www.findpro.cn/professor/service/service_type',
             type:'get',
             data:{},
             async: false,
@@ -307,7 +307,7 @@ window.onload=function() {
 
     function getAllMajorType() {
         $.ajax({
-            url:'https://www.ufeng.top/professor/service/major_type',
+            url:'https://www.findpro.cn/professor/service/major_type',
             type:'get',
             data:{},
             async: false,
@@ -350,7 +350,7 @@ $("#delete").click(function () {
         var tmp=selected[i]
         $.ajax({
             type: "delete",
-            url:"https://www.ufeng.top/professor/service",
+            url:"https://www.findpro.cn/professor/service",
             data:{"serviceId":tmp},
             async: false,
             success:function(data){

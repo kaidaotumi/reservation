@@ -11,7 +11,7 @@ window.onload=function() {
 
     function initPagenumber() {
         $.ajax({
-            url:'https://www.ufeng.top/professor/user/count',
+            url:'https://www.findpro.cn/professor/user/count',
             // url:'http://127.0.0.1:8081/user/count',
             type:'get',
             // dataType:'jsonp',
@@ -176,7 +176,7 @@ window.onload=function() {
         var page = pagenumber-1
         $.ajax({
             // url:'http://127.0.0.1:8081/user/page/'+pagenumber+'/size/50',
-            url:'https://www.ufeng.top/professor/user/page/'+page+'/size/50',
+            url:'https://www.findpro.cn/professor/user/page/'+page+'/size/50',
             type:'get',
             success:function (data) {
                 // $('#name').val(data)
@@ -327,7 +327,7 @@ $("#delete").click(function () {
         var tmp=selected[i]
         $.ajax({
             type: "post",
-            url:"https://www.ufeng.top/professor/user/delete/"+tmp,
+            url:"https://www.findpro.cn/professor/user/delete/"+tmp,
             data:{},
             async: false,
             success:function(data){
